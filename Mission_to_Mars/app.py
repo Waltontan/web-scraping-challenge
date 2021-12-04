@@ -26,11 +26,7 @@ def home():
 # Route that will trigger the scrape function
 @app.route("/scrape")
 def scrape():
-
-    # details = client.db.details
     mission_to_mars.scrape()
-
-    # Redirect back to home page
     return redirect("/")
 
 
